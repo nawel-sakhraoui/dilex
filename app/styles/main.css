@@ -1,0 +1,210 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+#p{background:#F5ECCE url('../images/back2.jpg') no-repeat center center;}
+#b{background: #04B431 url('../images/plan2.png')  }
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  
+  
+}
+
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+}
+
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+  
+  color: #04B431;
+}
+
+.submit{
+	  font-size: 14px;
+  padding: 12px 18px;
+  align: right;
+  background-color: #04B431;
+	color :#FFFFFF;
+	border: 0.01px solid white;
+	align: left ;
+	margin-left:20px;
+}
+
+  .sub{
+   font-size: 14px;
+  	background-color: #F5ECCE;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+   	margin-left: auto;
+   	margin-right: auto;
+   	margin-top: 20px;
+   	margin-bottom: 20px;
+   	align: center;
+   	width: 100%;
+   	 border: 1px solid lightgrey;
+  }
+  .subsub1{
+  
+  	background-color:#FFFFFF;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+   	margin-left: auto;
+   
+   
+   	align: center;
+   	width: 60%;
+   	 border: 1px solid lightgrey;
+  }
+
+
+  .subsub{
+  
+  	background-color:#FFFFFF;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+   	margin-left: auto;
+   	margin-right: auto;
+   
+   	align: center;
+   	width: 100%;
+   	 border: 1px solid lightgrey;
+  }
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+   
+  }
+  
+  .row{
+  	background-color: #F5ECCE;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   	margin-left: auto;
+   	margin-right: auto;
+   	align: center;
+   	width: 100%;
+   	 border: 1px solid lightgrey;
+  }
+  .img{
+  	 border: 0.5px solid lightgrey;
+  	}
+
+  /* Remove the padding we set earlier */
+  .header,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
+
+.navbar-default {
+  background-color: #F5ECCE;
+  border-color: #04B431;
+}
+.navbar-default .navbar-brand {
+  color: #0080ff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #FFFFFF;
+}
+.navbar-default .navbar-text {
+  color: #0080ff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #0080ff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #FFFFFF;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #FFFFFF;
+  background-color: #04B431;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #FFFFFF;
+  background-color: #04B431;
+}
+.navbar-default .navbar-toggle {
+  border-color: #04B431;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #04B431;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #0080ff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #0080ff;
+}
+.navbar-default .navbar-link {
+  color: #0080ff;
+}
+.navbar-default .navbar-link:hover {
+  color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #0080ff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #FFFFFF;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #FFFFFF;
+    background-color: #04B431;
+  }
+}

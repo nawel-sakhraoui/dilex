@@ -1,0 +1,55 @@
+<div  ng-controller="MainCtrl">
+<div class="sub" ng-show='!subbing' >
+
+
+<form name="msg" ng-submit="sub()" novalidate>
+<label>Nom, Prénom:	</label> 
+</br>
+<input class="subsub1" type="text" name="name" ng-model='name' maxlength=30 minlength=3 size=40 required />
+<div ng-messages="name.$error" >
+<div ng-message="required"  ng-if="msg.$submitted" >*Vos Nom, Prénom sont requis</div>
+<div ng-message="minlength" ng-if="msg.$submitted" >*le nom doit comporter plus de 3 lettres</div>
+</div>
+<br>
+<label>Ville:	</label> 
+</br>
+ <select class="subsub1"  name="ville" ng-model="ville" required>
+ 	
+      <option ng-repeat="v in list_villes"  value ={{v}}>{{v}}</option>
+     
+</select>
+<div ng-messages="ville.$error" ng-messages-include="views/error.html">
+<div ng-message="required" ng-if="msg.$submitted">*Votre ville est requise</div>
+</div>
+<br>
+<label>E-mail:	</label> 
+</br>
+<input class="subsub1"  type="email" name="email" ng-model="email"  size=40 required></input>
+<div ng-messages="msg.email.$error" ng-messages-include="views/error.html">
+<div ng-message="required" ng-if="msg.$submitted">*Votre email est requis</div>
+<div ng-message="email" ng-if="msg.$submitted"  >*E-mail non valide</div>
+</div>
+</br>
+
+<label>Message:	</label> 
+</br>
+<textarea class="subsub" name="message" rows=20 ng-model="message" required min=10 ></textarea>
+<div ng-messages="msg.message.$error" ng-messages-include="views/error.html">
+<div ng-message="required" ng-if="msg.$submitted">*Veuillez entrer votre message</div>
+<div ng-message="min" ng-if="msg.$submitted"  >*message trop court</div>
+</div>
+
+ <p align="right"> <input class="submit" type="submit" value="envoyer" ></input></p>
+ </form>
+
+  </div>
+ 
+ 
+ 
+ <div class="sub"   ng-show='subbing'>
+ 
+  <p > 	Votre message a bien été reçu. </p>
+  <a href="#/"> retour à la page d'acceuil</a>
+  </div>
+ </div>  
+  

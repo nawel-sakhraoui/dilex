@@ -17,7 +17,7 @@ angular.module('dilexApp')
 		
 		$scope.loc = $location.path() ;
 		
-		  return ($location.path().substr(0, path.length) === path) ? 'active' : '';
+		  return ($location.path() == path) ? 'active' : '';
 		};
 		
 	$scope.subbing = false ;

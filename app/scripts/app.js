@@ -24,6 +24,7 @@ angular
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
+        
        
       })
     
@@ -31,6 +32,11 @@ angular
           templateUrl: 'views/contact.html',
           controller: 'MainCtrl',
   
-        }) ;
+        }) 
         
+    .when('/apropos', {
+        templateUrl: 'views/apropos.html',
+        controller: 'MainCtrl',
+
+      }) ;
   });

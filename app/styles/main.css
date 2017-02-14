@@ -10,7 +10,7 @@ body {
 }
 
 #p{background:#F5ECCE url('../images/back2.jpg') no-repeat center center;}
-#b{background: #04B431 url('../images/plan2.png')  }
+#bb{background: #04B431 url('../images/plan2.png') ; }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 
@@ -101,7 +101,7 @@ body {
   }
 
 
-
+	.img2{width:50%;}
   
   .row{
   	background-color: #F5ECCE;
@@ -115,6 +115,14 @@ body {
   }
   .img{
   	 border: 0.5px solid lightgrey;
+  	 width:100%;
+  	 align:right
+  	}
+  	.r1{
+  		 padding-left: 10;
+    	padding-right: 10;
+  		 width:100%;
+  		  align:left
   	}
 
   /* Remove the padding we set earlier */

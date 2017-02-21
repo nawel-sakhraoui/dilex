@@ -38,5 +38,10 @@ angular
         templateUrl: 'views/apropos.html',
         controller: 'MainCtrl',
 
+      })
+      .when('/service', {
+        templateUrl: 'views/service.html',
+        controller: 'MainCtrl',
+
       }) ;
   });

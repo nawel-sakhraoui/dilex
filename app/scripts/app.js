@@ -17,6 +17,7 @@ angular
     'ngTouch',
     'ngRoute',
     'ngMaterial',
+    'ngMap'
     
   ])
   .config(   function ($routeProvider) {

@@ -8,7 +8,7 @@
  * Controller of the dilexApp
  */
 angular.module('dilexApp')
-.controller('MainCtrl', function ($scope, $location) {
+.controller('MainCtrl', function ($scope, $location, NgMap) {
   
 	
 	$scope.loc = "nothing";
@@ -39,7 +39,15 @@ angular.module('dilexApp')
 	$scope.list_villes = [ 'ADRAR','AIN DEFLA','AIN TEMOUCHENT','AL TARF','ALGER','ANNABA','B.B.ARRERIDJ','BATNA', 'BECHAR','BEJAIA','BISKRA','BLIDA', 'BOUIRA','BOUMERDES','CHLEF', 'CONSTANTINE', 'DJELFA','EL BAYADH','EL OUED','GHARDAIA', 'GUELMA','ILLIZI','JIJEL','KHENCHELA','LAGHOUAT','MASCARA','MEDEA','MILA','MOSTAGANEM','MSILA','NAAMA','ORAN', 'OUARGLA','OUM ELBOUAGHI','RELIZANE','SAIDA','SETIF','SIDI BEL ABBES','SKIKDA','SOUKAHRAS','TAMANGHASSET','TEBESSA','TIARET','TINDOUF','TIPAZA','TISSEMSILT','TIZI.OUZOU','TLEMCEN' ];
 
 	
+
 	
+	   $scope.map = {
+		        zoom: 17,
+		        center: {
+		            latitude:  35.7037555,
+		            longitude: -0.6346406
+		        },
+	   };
   });
 
 

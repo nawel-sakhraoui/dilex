@@ -48,9 +48,60 @@ angular.module('dilexApp')
 		            longitude: -0.6346406
 		        },
 	   };
-  });
+	   
+	   
+	   $scope.tree = [{
+		    name: "Industrie",
+		    link : "#industrie"
+		  }, {
+		    name: "BTP",
+		    link: "#btp",
+		    
+		  }, {
+		    name: "Agriculture",
+		    link: "#agriculture"
+		  }];
+		  
+		
+	   
+	   
+
+  })
 
 
+.directive('tree', function() {
+  return {
+    restrict: "E",
+    replace: true,
+    scope: {
+      tree: '='
+    },
+    templateUrl: 'template-ul.html'
+  };
+})
 
+.directive('leaf', function($compile) {
+  return {
+    restrict: "E",
+    replace: true,
+    scope: {
+      leaf: "="
+    },
+    templateUrl: 'template-li.html',
+    link: function(scope, element, attrs) {
+      if (angular.isArray(scope.leaf.subtree)) {
+        element.append("<tree tree='leaf.subtree'></tree>");
+        element.addClass('dropdown-submenu');
+        $compile(element.contents())(scope);
+      } else {
+        element.bind('click', function() {
+          alert("You have clicked on " + scope.leaf.name);
+        });
+
+      }
+    }
+  };
+
+});
 
 

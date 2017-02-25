@@ -9,8 +9,8 @@ body {
   padding: 0;
 }
 
-#p{background:#F5ECCE url('../images/back2.jpg') no-repeat center center;}
-#bb{background: #04B431 url('../images/plan2.png') ; }
+#p{background:#E6DEC1 url('../images/back2.jpg') no-repeat center center;}
+#bb{background: #E6DEC1  url('../images/plan2.png') repeat center center ; }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 
@@ -57,8 +57,9 @@ body {
 }
 
   .sub{
+  
    font-size: 14px;
-  	background-color: #F5ECCE;
+  	background-color: #E6DEC1;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -105,7 +106,18 @@ body {
 	.img3{width:100%;}
   	
   .row{
-  	background-color: #F5ECCE;
+  	background-color: #04B431;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   	margin-left: auto;
+   	margin-right: auto;
+   	align: center;
+   	width: 100%;
+   	 border: 1px solid lightgrey;
+   	 color:#FFFFFF
+  }
+  .row2{
+  	background-color:  #58ACFA; 
     padding-top: 20px;
     padding-bottom: 20px;
    	margin-left: auto;
@@ -114,6 +126,7 @@ body {
    	width: 100%;
    	 border: 1px solid lightgrey;
   }
+ 
   .img{
   	 border: 0.5px solid lightgrey;
   	 width:90%;
@@ -146,7 +159,7 @@ body {
 }
 
 .navbar-default {
-  background-color: #F5ECCE;
+  background-color: #6F6B5C;
   border-color: #04B431;
 }
 .navbar-default .navbar-brand {
@@ -216,34 +229,38 @@ body {
 }
 
 .divs{
-	
-	width :90%;
+	color:#FFFFFF;
+	background-color: #20D29F;
+	margin-top : 20px;
+  	margin-bottom : 20px;
+	width :100%;
 	 margin-left: auto;
    	margin-right: auto;
    	align: center;
+   	border: 1px solid lightgrey;
 }
 .imgs { 
-	
    position: relative; 
    width: 100%; /* for IE 6 */
-   
    margin-left: auto;
-   	margin-right: auto;
-   	align: center;
-   
-   
+   margin-right: auto;
+   align: center;
+ 
 }
+
 
 .h2s { 
    position: absolute; 
-   bottom: 0px; 
+   top: 0px; 
    left: 0; 
    width: 100%; 
     color: white; 
-   font: bold 14px/24px Helvetica, Sans-Serif; 
+   font: bold 24px/32px Helvetica, Sans-Serif; 
     padding:0 5px;
    letter-spacing: -1px;  
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.7);
    padding: 10px; 
 }
+
+

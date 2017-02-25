@@ -1,40 +1,105 @@
-
-
- 		 <div  layout="row" class="row" >
- 
- 		 <div flex class="imgs"  layout="row"  >
- 		  <div  class="imgs"   id="myslider" style="width:420px;height:260px">	
-
-    			  <div > 
+    
+    <div class="divs">
+    <lu><h3> Reférences</h3>
+    <li><a  ng-href='/#!service/#industrie'>INDUSTRIE</a></li>
+    <li><a ng-href='/#!service/#btp'>BTP</a></li>
+    <li><a ng-href='/#!service/#agriculture'>Agriculture</a></li>
+    <li><a ng-href='/#!service/#tourisme'>TOURISME ET LOISIRS</a></li>
+    </lu>
+    </div>
+    <div  id="industrie"  class="divs">
+		<h2  align="center" >INDUSTRIE</h2>
+		
+ 		 
+ 		<div   layout="row"   >
+ 		  	<div flex class="imgs"   id="myslider" style="width:400px;height:400px">	
     			  
+    			  <div class="imgs" >
     			  <img class="img3"  src='../images/domain/1.jpg'>
-    			  <h2 class="h2s"> dilex blablablabalabla </h2>
+    			  <h2 class="h2s">Production de verre creux </h2>
     			  </div>
     			  
-          		  <div >	
+          		  <div class="imgs">	
           		  <img class="img3"  src='../images/domain/2.jpg'>
-          		   <h2 class="h2s"> dilex blablablabalabla </h2>
+          		  <h2 class="h2s"> Fabrication de papier et carton </h2>
           		  </div>
-          		  
-          		   <div > 
-          		   <imgclass="img3" src='../images/domain/3.jpg'>
-          		   <h2 class="h2s"> dilex blablablabalabla </h2>
-          		  </div>
-          		  
-          		  <div >	
-          		  <img  class="imgs"  src='../images/domain/4.jpg'> 
-          		  <h2 class="h2s"> dilex blablablabalabla </h2> 
-          		  </div>
-          		  
-          		  <div >	 
-          		  <img  class="img3" src='../images/domain/5.jpg'> 
-          		  <h2 class="h2s"> dilex blablablabalabla </h2>
-          		  </div>
-          </div>	  
+          		 
+          		  <div class="imgs"> 
+          		  <img  class="img3" src='../images/domain/3.jpg'>
+          	      <h2 class="h2s"> Raffinage de sel  </h2>
+          	      </div>
+          		 
+          	  
    	  
-    	  </div>
+    	   </div>
     	 </div>
-    	 
+    </div>	 
+    
+    
+    <div id="btp" class="divs">	 
+    	 <h2  align="center" > BTP</h2>
+		
+ 		 
+ 		<div    layout="row"   >
+ 		  	<div flex class="imgs"   id="myslider2" style="width:400px;height:400px">	
+    			  
+    			  <div class="imgs" >
+    			  <img class="img3"  src='../images/domain/3.jpg'>
+    			  <h2 class="h2s">  Base logistique</h2>
+    			  </div>
+    			    <div class="imgs" >
+    			  <img class="img3"  src='../images/domain/4.jpg'>
+    			  <h2 class="h2s"> Briqueterie</h2>
+    			  </div>
+          	  
+   	  
+    	   </div>
+    	 </div>
+	 </div>
+	 
+	 
+	 <div id="agriculture" class="divs">	 
+    	 <h2 align="center" >AGRICULTURE</h2>
+		
+ 		 
+ 		<div    layout="row"   >
+ 		  	<div flex class="imgs"   id="myslider3" style="width:400px;height:400px">	
+    			  
+    			  <div class="imgs" >
+    			  <img class="img3"  src='../images/domain/2.jpg'>
+    			  <h2 class="h2s"> Céréaliculture </h2>
+    			  </div>
+    			    <div class="imgs" >
+    			  <img class="img3"  src='../images/domain/1.jpg'>
+    			  <h2 class="h2s">Arboriculture </h2>
+    			  </div>
+          	  
+   	  
+    	   </div>
+    	 </div>
+	 </div>
+	 
+	 	 <div id="tourisme" class="divs">	 
+    	 <h2 align="center" >TOURISME ET LOISIRS</h2>
+		
+ 		 
+ 		<div    layout="row"   >
+ 		  	<div flex class="imgs"   id="myslider4" style="width:400px;height:400px">	
+    			  
+    			  <div class="imgs" >
+    			  <img class="img3"  src='../images/domain/4.jpg'>
+    			  <h2 class="h2s"> Village de vacances </h2>
+    			  </div>
+    			    <div class="imgs" >
+    			  <img class="img3"  src='../images/domain/5.jpg'>
+    			  <h2 class="h2s"> Appart'Hotel</h2>
+    			  </div>
+          	  
+   	  
+    	   </div>
+    	 </div>
+	 </div>
+ 
  <script>
     var container = document.getElementById('myslider');
     
@@ -52,4 +117,56 @@
        
       }
     );;
+ 
+    var container = document.getElementById('myslider2');
+    
+    var imgSlider = new SimpleSlider(
+      container,
+      {
+  
+  		startValue: 0,
+  		visibleValue: 0,
+  		endValue: 0,
+        autoPlay:true,
+        transitionDuration: 3,
+  		transitionDelay: 2,
+        transitionProperty:'left',
+       
+      }
+    );;
+
+    var container = document.getElementById('myslider3');
+    
+    var imgSlider = new SimpleSlider(
+      container,
+      {
+  
+  		startValue: 0,
+  		visibleValue: 0,
+  		endValue: 0,
+        autoPlay:true,
+        transitionDuration: 3,
+  		transitionDelay: 2,
+        transitionProperty:'left',
+       
+      }
+    );;
+  
+    var container = document.getElementById('myslider4');
+    
+    var imgSlider = new SimpleSlider(
+      container,
+      {
+  
+  		startValue: 0,
+  		visibleValue: 0,
+  		endValue: 0,
+        autoPlay:true,
+        transitionDuration: 3,
+  		transitionDelay: 2,
+        transitionProperty:'left',
+       
+      }
+    );;
   </script>
+  

@@ -1,5 +1,5 @@
 <!doctype html>
-<html  >
+<html  id="bb" >
   <head>
     <meta charset="utf-8">
     <title></title>
@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="dilexApp" id="b" ng-controller="MainCtrl"  >
+  <body ng-app="dilexApp" ng-controller="MainCtrl"  >
+ <div  id="bb">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -42,7 +43,7 @@
 
             <ul class="nav navbar-nav">
               <li ng-class="getClass('/')"><a    href="#!"  >Accueil</a></li>
-              <li ng-class="getClass('/service')"  ><a  href="#!service" >Services</a></li>
+              <li ng-class="getClass('/service')"   ><a  href="#!service" >Reférences </a></li>
               <li ng-class="getClass('/contact')" ><a  href="#!contact" >Contact</a></li>
               <li ng-class="getClass('/apropos')" ><a href="#!apropos" >A propos</a></li>
             </ul>
@@ -61,7 +62,7 @@
         <!-- p><span class="glyphicon glyphicon-certificate"></span> </p -->
       
     </div>
-
+</div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
